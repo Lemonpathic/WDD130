@@ -1,0 +1,28 @@
+body {
+    background-color: #A9BD93;
+    margin: 0;
+}
+
+h1{
+    background-color: #FFFDD0;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+#highlight{
+    background-color: lawngreen;
+    display: inline-block;
+}
+
+.joseph{
+    font-size: 1.3em;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.orange{
+    background-color: orange;
+}
+.purple{
+    background-color: purple;
+}

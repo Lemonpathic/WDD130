@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Number</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function generateCode() {
+      document.querySelector('.generate-btn').disabled = true;
+      document.querySelector('.number-output').textContent = '555';
+    }
+  </script>
+  <style>
+    .number-output {
+      margin-bottom: 0px;
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="number-output"></div>
+    <button class="generate-btn" onclick="generateCode()">Generate Discount Code</button>
+    <input type="text" class="number-input" readonly>
+  </div>
+</body>
+</html>
