@@ -1,0 +1,56 @@
+body{
+    margin: auto;
+    background-color: #fca6c9;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 490px;
+}
+h1{
+    color: white; 
+    font-weight: bold;
+    
+
+
+}
+#edu_p{
+    color: white;
+    margin-top: 35px;
+    line-height: 25px;
+}
+
+h1:hover{
+    color: black;
+}
+
+#name{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+#list{
+    padding-top: 2px;
+    padding-left: 0;
+    font-weight: bold;
+    text-align: left;
+    font-size: large;
+}
+
+li{
+    margin: 15px;
+}
+
+#quote {
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 42px;
+    font-weight: ;
+    color: white;
+    }
+
+img{
+    margin-top: 15px;
+    width: 45%;
+}
+.text {
+    margin: auto;
+}
