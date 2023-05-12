@@ -1,63 +1,131 @@
-.logo{
+:root {
+    --primary-color: #5AA9E7;
+    --secondary-color: #464041;
+    --accent1-color: #CC6C0B;
+    --accent2-color: #FEFEFE;
+    --heading-font: "Braah One";
+    --paragraph-font: "Ubuntu", Helvetica, sans-serif;
+    --headline-color-on-white: #464041;
+    --headline-color-on-color: #FEFEFE;
+    --paragraph-color-on-white: #211F1C;
+    --paragraph-color-on-color: #FEFEFE;
+    --paragraph-background-color: #5AA9E6;
+    --nav-link-color: #FEFEFE;
+    --nav-background-color: #464041;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #211F1C;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Ubuntu:wght@300&display=swap');
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+  }
+  
+  .logo {
     width: 80px;
-}
-body{
-    background-color: #5AA9E7;
+  }
+  
+  body {
+    background-color: var(--primary-color);
     margin: 0;
-}
-header{
-    background-color: #464041;
-
-}
-#content{
+  }
+  
+  header {
+    background-color: var(--secondary-color);
+  }
+  
+  #content {
     margin: auto;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--paragraph-font);
     max-width: 1600px;
-}
-#hero-img{
+  }
+  
+  #hero-img,
+  .ronny {
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
-}
-#hero-msg h1{
+    width: 100%;
+  }
+  
+  #hero-msg h1 {
     text-align: center;
-}
-#hero-msg h4{
+  }
+  
+  #hero-msg h4 {
     text-align: center;
-}
-.button-box{
+  }
+  
+  .button-box {
     text-align: center;
-}
-main section{
+  }
+  
+  main section {
     text-align: center;
-}
-nav a{
+  }
+  
+  nav a {
+    text-decoration: none;
     text-align: center;
-}
-.card-img{
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+  }
+  
+  .card-img {
     width: 1000px;
-}
-.icon{
+  }
+  
+  .icon {
     max-width: 150px;
-}
-nav a:hover{
-    background-color: #CC6C0B;
-}
-footer{
+  }
+  
+  nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+  }
+  
+  footer {
     text-align: left;
-    background-color: #464041;
-}
-.book, .join{
-    background-color: #FEFEFE;
-}
-.book:hover, .join:hover{
+    background-color: var(--secondary-color);
+    font-size: 1.2em;
+  }
+  
+  .book,
+  .join {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+  }
+  
+  .book:hover,
+  .join:hover {
     background-color: #464646;
-}
-#background{
+    color: white;
+  }
+  
+  #background {
     height: 725px;
-    background-color: #CC6C0B;
-}
-.msg{
-    background-color: #CC6C0B;
-}
+    background-color: var(--accent1-color);
+  }
+  
+  .msg {
+    background-color: var(--accent1-color);
+  }
+  
+  .msg p {
+    color: var(--paragraph-color-on-white);
+  }
+  
+  .home-title {
+    color: var(--secondary-color);
+  }
+  
+  footer a {
+    color: var(--accent2-color);
+  }
+  
+  footer a:hover {
+    color: var(--primary-color);
+  }
+  
