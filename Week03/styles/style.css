@@ -1,0 +1,25 @@
+body{
+    background-color: brown;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.scc1{
+    background-color: dodgerblue;
+}
+.scc1 img{
+    width:100%;
+}
+.scc2{
+    background-color: antiquewhite;
+}
+.john{
+    background-color: blueviolet;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+footer{
+    text-align: center;
+    grid-column: 1/3;
+}
