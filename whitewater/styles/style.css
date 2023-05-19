@@ -63,10 +63,14 @@
   }
   
   main section {
+    box-sizing: border-box;
     text-align: center;
   }
-  
+  nav{
+    margin-top: 2%;
+  }
   nav a {
+    padding: 25px;
     text-decoration: none;
     text-align: center;
     background-color: var(--nav-background-color);
@@ -74,7 +78,9 @@
   }
   
   .card-img {
+    margin-top: 20px;
     width: 1000px;
+    border: #CC6C0B solid 5px;
   }
   
   .icon {
@@ -97,6 +103,10 @@
   .join {
     background-color: var(--accent2-color);
     color: var(--accent1-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
   }
   
   .book:hover,
@@ -106,16 +116,18 @@
   }
   
   #background {
-    height: 725px;
+    height: 400px;
     background-color: var(--accent1-color);
   }
   
   .msg {
+    padding: 25px;
     background-color: var(--accent1-color);
   }
   
   .msg p {
     color: var(--paragraph-color-on-white);
+    margin-bottom: 30px;
   }
   
   .home-title {
