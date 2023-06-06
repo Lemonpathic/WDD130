@@ -126,6 +126,17 @@ main {
   grid-row: 2;
 }
 
+.card-img {
+  border: 10px solid #d9c2a3;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+
 main section {
   box-sizing: border-box;
   text-align: center;
@@ -191,6 +202,11 @@ footer {
   background-color: #211F1C;
   grid-row: 6;
   grid-column: 6/span 4;
+  padding: 35px;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px #5AA9E7;
+  border-radius: 10px;
 }
 
 .msg p {
@@ -255,7 +271,7 @@ footer a:hover {
   .camping-card,
   .rapids-card {
     margin: 50px auto;
-    width: 60%;
+    width: 59%;
   }
 
   #background {
