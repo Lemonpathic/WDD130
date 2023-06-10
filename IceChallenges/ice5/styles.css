@@ -72,8 +72,9 @@ img {
 }
 #submit{
     font-family: geologica;
+    align-self: center;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
     background-color: #D89C70;
     border: none;
     color: white;
