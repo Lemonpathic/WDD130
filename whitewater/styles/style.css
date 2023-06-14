@@ -37,6 +37,8 @@ header {
   grid-template-columns: 1fr 1fr;
   background-color: var(--secondary-color);
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 4px;
 }
 
 #content {
@@ -265,6 +267,7 @@ footer a:hover {
   .home-title {
     font-size: 25px;
     color: #6f7364;
+    mar
   }
 
   .rivers-card,
