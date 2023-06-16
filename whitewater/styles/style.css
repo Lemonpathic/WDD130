@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
   width: 80px;
+  margin-right: 300px;
 }
 
 body {
@@ -68,6 +69,8 @@ header {
   grid-row: 5/span 3;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #000;
 }
 
 #hero-box {
@@ -76,11 +79,11 @@ header {
 }
 
 #hero-msg {
-  background-color: rgba(90, 169, 231, 0.5);
-  padding: 18px;
+  background-color: #454041dc;
+  padding: 44px;
   position: absolute;
-  top: 22%;
-  left: 50%;
+  top: 314px;
+  left: 64%;
   transform: translate(-50%, -50%);
   color: var(--accent2-color);
   border-radius: 10px;
@@ -88,10 +91,16 @@ header {
 
 #hero-msg h1 {
   text-align: center;
+  margin:0;
+  font-size: 2em;
 }
 
 #hero-msg h3 {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 34px;
+  color: #fff;
+  font-size: 1.3em;
 }
 
 .button-box {
@@ -129,13 +138,13 @@ main {
 }
 
 .card-img {
-  border: 10px solid #d9c2a3;
+  border: 10px solid #bf712a;
   transition: transform .5s;
-  box-shadow: 5px 5px 10px #6f7364;
+  box-shadow: 5px 5px 10px #000;
 }
 .card-img:hover {
-  opacity: .6;
-  transform: scale(1.1);
+  opacity: .85;
+  transform: scale(1.4);
 }
 
 
@@ -175,10 +184,9 @@ footer {
   font-size: 1.2em;
 }
 
-.book,
-.join {
-  background-color: var(--accent2-color);
-  color: var(--accent1-color);
+.book, .join {
+  background-color: #f3bb47;
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
   padding: 15px 30px;
@@ -207,17 +215,19 @@ footer {
   padding: 35px;
   grid-column: 6/10;
   grid-row: 6/7;
-  box-shadow: 5px 5px 10px #5AA9E7;
+  box-shadow: 5px 5px 10px #000;
   border-radius: 10px;
 }
-
+.msg h2{
+  color: #5AA9E7;
+}
 .msg p {
   color: var(--paragraph-color-on-color);
   margin-bottom: 30px;
 }
 
 .home-title {
-  color: var(--secondary-color);
+  color: #fff;
 }
 
 footer a {
@@ -251,11 +261,14 @@ footer a:hover {
   }
 
   #hero-msg {
-    position: relative;
-    background-color: #CC6C0B;
-    display: block;
-    margin-top: 150px;
-    padding: 15px;
+    background-color: #454041dc;
+    padding: 18px;
+    position: absolute;
+    top: 300px;
+    left: 954px;
+    transform: translate(-50%, -50%);
+    color: var(--accent2-color);
+    border-radius: 10px;
   }
 
   #hero-msg h4 {
@@ -267,7 +280,6 @@ footer a:hover {
   .home-title {
     font-size: 25px;
     color: #6f7364;
-    mar
   }
 
   .rivers-card,
@@ -286,7 +298,9 @@ footer a:hover {
     display: block;
     margin: 0 auto;
   }
-
+.msg h2 {
+  color: #5AA9E7;
+}
   footer {
     margin-top: 25px;
   }
