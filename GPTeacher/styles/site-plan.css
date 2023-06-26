@@ -28,7 +28,9 @@ Fonts are separated by a & */
 
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
-
+html{
+    background-color: #434551;
+}
 body {
     max-width: 960px;
     margin: 0 auto;
