@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Montserrat&display=swap');
+body{
+    background: linear-gradient(45deg, #8DCA87 50%, #BEDA63 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#testimonial-card{
+    margin: auto;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 200px 270px;
+    width: 470px;
+
+}
+#picture{
+    max-width: 200px;
+}
+#text{
+    grid-column: 2;
+}
+p{
+    padding-top: 30px;
+    font-size: .5em;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0px;
+}
+#name{
+    font-family: "Bascasime Antique", serif;
+    font-weight: normal;
+    padding-top: 30px;
+    margin: 0px;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-bottom: 7px;
+}
+h3{
+    padding-top: 7px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 8px;
+    margin:0px;
+    padding-left: 30px;
+}
+hr {
+    margin: 0 30px;
+    border: none;
+    border-top: 2px solid black;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#quotes{
+    grid-column: 2;
+    justify-self: right;
+}
+#boxes{
+    padding-top: 15px;
+}
