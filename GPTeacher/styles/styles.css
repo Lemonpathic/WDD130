@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Ubuntu:wght@300&display=swap');
+main{
+    display:grid;
+}
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #3b3b44;
+    align-items: center;
+    justify-items: center;
+}
+nav{
+    justify-self: right;
+    margin-right: 60px
+}
+nav ul {
+    list-style-type: none;
+    /* justify-self: right; */
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    color: #6f9e66;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 13px;
+}
+
+nav a:hover {
+    color: #4c7945;
+}
+
+#logo{
+    margin-left: 10px;
+    justify-self: left;
+    padding: 24px;
+    width: 30%;
+}
+#gqs{
+    margin-left: 245px;
+}
+
+body{
+    background-color: #444653;
+}
+.mcq{
+    list-style-type: none;
+}
+
+h1,h2{
+    color: #60A060;
+    font-family: Geologica;
+}
+
+
+.file-section{
+    margin-top: 50px;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.file-section h1{
+    justify-self: center;
+    grid-column: 1/4;
+    margin: 0;
+}
+
+form{
+    display:grid;
+    grid-template-columns: 1fr 26px 1fr;
+    font-family: Ubuntu;
+    grid-column: 2;
+}
+.file-input{
+    display: none;
+}
+.file-label{
+    font-size: 15px;
+    display: grid;
+    background-color: #0056b3;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.file-label:hover{
+    background-color: #005689;
+}
+.submit-button {
+    font-size: 15px;
+    font-family: Ubuntu;
+    grid-column-start: 3;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #005689;
+}
+
+section.questions {
+    justify-self: center;
+    background: #3B3B45;
+    padding: 36px;
+    width: 75%;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: #fff
+}
+
+#main-img{
+    margin-top: 15px;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #3b3b44;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+#main-img {
+    margin-top: 20px;
+    justify-self: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
