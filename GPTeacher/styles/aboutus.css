@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Ubuntu:wght@300&display=swap');
+
+main{
+    display:grid;
+}
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #3b3b44;
+    align-items: center;
+    justify-items: center;
+}
+nav{
+    justify-self: right;
+    margin-right: 60px
+}
+nav ul {
+    list-style-type: none;
+    /* justify-self: right; */
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    color: #6f9e66;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 13px;
+}
+
+nav a:hover {
+    color: #4c7945;
+}
+
+#logo{
+    margin-left: 10px;
+    justify-self: left;
+    padding: 24px;
+    width: 30%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4c7945;
+}
+
+body{
+    background-color: #444653;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #3b3b44;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #60A060;
+    font-family: 'Geologica', serif;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.support-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+

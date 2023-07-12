@@ -1,182 +1,226 @@
-
-/* if you are using any Google fonts change the font names below to your fonts.
-Any spaces in your font name should be replaced with a +.
-Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Ubuntu:wght@300&display=swap');
-:root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #2B303B   ;
-    --secondary-color: #60A060 ;
-    --accent1-color: #E8F6EF;
-    --accent2-color: #2862cc;
-
-    /* change the values below to your chosen font(s) */
-    --heading-font: geologica, sans-serif;
-    --paragraph-font: zilla slab, serif;
-
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #2B303B;  /* headlines on a white background */
-    --headline-color-on-color: #50A0FF; /* headlines on a colored background */
-    --paragraph-color-on-white: #4C4C6D; /* paragraph text on a white background */
-    --paragraph-color-on-color: #E8F6EF; /* paragraph text on a colored background */
-    --paragraph-background-color: #2B303B  ;
-    --nav-link-color: #60A060;
-    --nav-background-color: #2862cc;
-    --nav-hover-link-color: #60A060;
-    --nav-hover-background-color: #E8F6EF;
+main{
+    display:grid;
 }
-
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-html{
-    background-color: #434551;
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #3b3b44;
+    align-items: center;
+    justify-items: center;
 }
-body {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 4em;
-    font-size: 18px;
-    text-align: center;
-
+nav{
+    justify-self: right;
+    margin-right: 60px
 }
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
-}
-h2 {
-    text-align: center;
-}
-hr {
-    height: 3px;
-    margin: 35px 0;
-    background: var(--accent1-color);
-}
-header {
-    padding: 1em;
-    text-align: center;
-    color: var(--headline-color-on-color);
-    background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-    color: var(--headline-color-on-color);
-}
-p, li {
-    font-family: var(--paragraph-font);
-    color: #ffffff;
-    padding: 1em;
-    font-size: large;
-}
-li{
-    text-align: left;
-}
-.colors {
-    width: 100%;
-    min-width: 350px;
-    margin: 30px auto;
-    text-align: center;
-}
-.colors th {
-    background-color: #999;
-}
-.colors td{
-    width: 25%;
-    height: 3em;
-}
-.primary {
-    background-color: var(--primary-color);
-}
-.secondary {
-    background-color: var(--secondary-color);
-}
-.accent1 {
-    background-color: var(--accent1-color);
-}
-.accent2{
-    background-color: var(--accent2-color);
-}
-p.colored {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
-    text-align: left;
-}
-.image-grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-.site-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-nav {
-    line-height: 1.5em;
-    text-align: center;
-    font-size: 1.2em;
-}
-nav  {
+nav ul {
     list-style-type: none;
-    display: flex;
+    /* justify-self: right; */
 }
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
 nav a {
-    padding:1em;
-    min-width: 120px;
+    font-family: "Ubuntu", sans-serif;
     text-decoration: none;
+    color: #6f9e66;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 13px;
+}
+
+nav a:hover {
+    color: #4c7945;
+}
+
+#logo{
+    margin-left: 10px;
+    justify-self: left;
+    padding: 24px;
+    width: 30%;
+}
+#gqs{
+    margin-left: 245px;
+}
+
+body{
+    background-color: #444653;
+}
+.mcq{
+    list-style-type: none;
+}
+
+h1,h2{
+    color: #60A060;
+    font-family: Geologica;
+}
+
+
+.file-section{
+    margin-top: 50px;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.file-section h1{
+    justify-self: center;
+    grid-column: 1/4;
+    margin: 0;
+}
+
+form{
+    display:grid;
+    grid-template-columns: 1fr 26px 1fr;
+    font-family: Ubuntu;
+    grid-column: 2;
+}
+.file-input{
+    display: none;
+}
+.file-label{
+    font-size: 15px;
+    display: grid;
+    background-color: #0056b3;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.file-label:hover{
+    background-color: #005689;
+}
+.submit-button {
+    font-size: 15px;
+    font-family: Ubuntu;
+    grid-column-start: 3;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #005689;
+}
+
+section.questions {
+    justify-self: center;
+    background: #3B3B45;
+    padding: 36px;
+    width: 75%;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: #fff
+}
+
+#main-img{
+    margin-top: 15px;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #3b3b44;
+    align-items: center;
+    justify-items: center;
     padding: 10px;
+    margin-top: 30px;
     border-radius: 10px;
 }
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+#main-img {
+    margin-top: 20px;
+    justify-self: center;
 }
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+footer a {
+    color: white;
+    text-decoration: none;
 }
-.sitemap {
-    display: grid;
-    justify-content: center;
+.login{
+    justify-self: center;
+}
 
-    grid-template-columns: repeat(6, 15%);
-    grid-template-rows: 3em 1.5em 1.5em 3em;
-    grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+.login label {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
 }
-.sitemap > div {
-    text-align: center;
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
-.sm-home {
-    grid-area: home;
-    background-color: #ccc;
-    line-height: 3em;
+
+
+.login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4c9aff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
-.sm-page2 {
-    grid-area: page2;
-    background-color: #ccc;
-    line-height: 3em;
+
+.login input[type="submit"]:hover {
+    background-color: #3287e0;
 }
-.sm-page3 {
-    grid-area: page3;
-    background-color: #ccc;
-    line-height: 3em;
+
+.loader {
+    display: none;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #0056b3;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin-top: 10px;
+    justify-self: center;
 }
-.top {
-    grid-area: top;
-    border-left: 1px solid;
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
-.left {
-    grid-area: left;
-    border-top: 1px solid;
-    border-left: 1px solid;
+
+#popupMessage{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 100;
 }
-.right {
-    grid-area: right;
-    border-top: 1px solid;
-    border-right: 1px solid;
+
+button{
+    background-color: #0056b3;
+    color: #fff;
+    width: 30% ;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    margin-top: 10px;
 }

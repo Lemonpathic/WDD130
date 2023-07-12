@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="styles/site-plan.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <main>
@@ -17,17 +17,33 @@
             </ul>
         </nav>
     </header>
-    <h1>Log in</h1>
+    <div id="popupMessage" class="popup">
+        <p>Sorry we do not have a login system set up yet.</p>
+    </div>
+
     <div class="login">
+        <h1>Log in</h1>
         <label for="username">Username</label>
         <input type="text" id="username" placeholder="Username">
         <label for="password">Password</label>
         <input type="password" id="password" placeholder="Password">
+        <button onclick="showPopup()">Log In</button>
     </div>
 </main>
 <footer>
     <p>© 2021 GPTeacher. All Rights Reserved.</p>
     <a href="site-plan.html">Site-Plan</a>
 </footer>
+
+<script>
+    function showPopup() {
+        var popup = document.getElementById("popupMessage");
+        popup.style.display = "block";
+
+        setTimeout(function() {
+            popup.style.display = "none";
+        }, 5000); // 5000 milliseconds = 5 seconds
+    }
+</script>
 </body>
 </html>
