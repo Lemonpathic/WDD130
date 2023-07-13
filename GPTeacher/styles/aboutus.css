@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Ubuntu:wght@300&display=swap');
 
-main{
-    display:grid;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+body{
+    background-color: #444653;
+    font-family: "Ubuntu", sans-serif;
+}
+
 header{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -10,22 +18,31 @@ header{
     align-items: center;
     justify-items: center;
 }
+
+#logo{
+    margin-left: 10px;
+    justify-self: left;
+    padding: 24px;
+    width: 30%;
+}
+
 nav{
     justify-self: right;
     margin-right: 60px
 }
+
 nav ul {
-    list-style-type: none;
-    /* justify-self: right; */
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
-nav li {
+nav ul li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav a {
-    font-family: "Ubuntu", sans-serif;
     text-decoration: none;
     color: #6f9e66;
     font-size: 1.3em;
@@ -37,45 +54,12 @@ nav a:hover {
     color: #4c7945;
 }
 
-#logo{
-    margin-left: 10px;
-    justify-self: left;
-    padding: 24px;
-    width: 30%;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    font-size: 1.3em;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #4c7945;
-}
-
-body{
-    background-color: #444653;
-}
-
-footer{
+main{
+    text-align: center;
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #3b3b44;
-    align-items: center;
-    justify-items: center;
-    padding: 10px;
-    margin-top: 30px;
-    border-radius: 10px;
+    place-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 h1, h2 {
@@ -92,8 +76,17 @@ h2 {
     font-size: 1.6em;
 }
 
-p {
-    margin-bottom: 20px;
+p{
+    color: white;
+    background-color: #3b3b43;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    transition: background-color .5s ease;
+}
+
+p:hover{
+    background-color: #3b3b4394;
 }
 
 .support-img {
@@ -101,10 +94,27 @@ p {
     max-width: 600px;
     display: block;
     margin: 20px 0;
+    justify-self: center;
+}
+
+#examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #3b3b44;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
 }
 
 footer a {
     color: white;
     text-decoration: none;
 }
-
