@@ -17,11 +17,14 @@
       </ul>
     </nav>
   </header>
+  <div id="popupMessage" class="popup">
+    <p>Sorry we do not have a file system set up yet.</p>
+  </div>
   <section class="file-section">
     <h1>Upload your file</h1>
     <form id="file-form">
       <input type="file" name="document" class="file-input" id="fileInput">
-      <label for="fileInput" class="file-label">Choose File</label>
+      <label onclick="showPopup()" class="file-label">Choose File</label>
       <input type="submit" value="Upload" class="submit-button">
     </form>
   </section>
@@ -32,6 +35,15 @@
     <a href="site-plan.html">Site-Plan</a>
   </footer>
   <script>
+
+    function showPopup() {
+      var popup = document.getElementById("popupMessage");
+      popup.style.display = "block";
+
+      setTimeout(function() {
+        popup.style.display = "none";
+      }, 1500);
+    }
     document.getElementById("file-form").addEventListener("submit", function(event) {
       event.preventDefault();
     });
